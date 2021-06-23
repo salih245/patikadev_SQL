@@ -1,0 +1,7 @@
+select country from public.country where country like 'A%a';
+
+select country from public.country where country like '_____%n';
+
+select title from public.film where title ilike '%t%';
+
+select * from public.film where title like 'C%' and length > 90 and rental_rate = 2.99;
