@@ -1,0 +1,14 @@
+--1
+select title, rating from public.film order by rating;
+--2
+select replacement_cost, count(*) from public.film 
+group by replacement_cost
+having count(*) > 50 ;
+--3
+select store_id,  count(*) from public.customer 
+group by store_id; 
+--4
+select country_id, count(country_id) from public.city
+group by country_id
+order by count(country_id) desc
+limit 1;
