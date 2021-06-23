@@ -1,0 +1,9 @@
+select distinct replacement_cost from public.film;
+
+select count(distinct replacement_cost) from public.film;
+
+select count(*) from public.film where (title like 'T%' and rating = 'G');
+
+select count(*) from public.country where country like '_____';
+
+select count(*) from public.city where city ilike '%R';
