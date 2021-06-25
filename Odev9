@@ -1,0 +1,8 @@
+select city, country from public.country as coun
+inner join public.city as ci on ci.country_id = coun.country_id;
+
+select first_name, last_name, payment_id from customer 
+inner join payment on customer.customer_id = payment.customer_id;
+
+select first_name, last_name, rental_id from customer 
+inner join rental on customer.customer_id = rental.customer_id;
